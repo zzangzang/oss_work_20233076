@@ -117,13 +117,13 @@
 > `kill 12345`
 
 * *'SIGTERM' 시그널을 보내어 프로세스를 정상 종료*
-> `kill -s SIGTERM <PID>`
+> `kill -s SIGTERM <PID>`    
 
-* *pid가 '12345'인 프로세스를 강제 종료*
-> `kill -9 12345`    
+* *pid가 '12345'인 프로세스를 강제 종료*    
+>> ![kill -9 실행결과](https://postfiles.pstatic.net/MjAyMDAzMTVfNDMg/MDAxNTg0Mjc2NzQ2NzA0.3kIh2oNE9-zMfz_vXAYneYf-mZ_AeFsJv7uTORzxbgQg.vegExncPwPiFp-cVizbK_n704IWNjuRyYijGPiUKtfkg.JPEG.rlaghals999/82.jpg?type=w773)        
+> `kill -9 12345`        
 > `kill -SIGKILL 12345`
-
-* *<PID1> <PID2> <PID3>와 같이 여러 개의 프로세스 종료*
+* *여러 개의 프로세스 종료*    
 > `kill <PID1> <PID2> <PID3>`
 
 * *그룹 ID를 지정하여 특정 그룹의 모든 프로세스 종료*
