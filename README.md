@@ -3,10 +3,16 @@
 ### 1-1. top 명령어란?
 > 실시간으로 CPU 사용률을 체크해주는 유틸리티로, 작업관리자와 비슷한 성격을 가지고 있다. top 명령어를 사용하여 CPU, 메모리, 디스크, 네트워크 등의 시스템 성능 지표와 실행 중인 프로세스 목록을 볼 수 있다. 
 ### 1-2. 사용 구문
-> `top[옵션]`
+> `top[옵션]`    
+> *~~옵션 없이 명령어를 실행하면 interval 간격(기본 3초)으로 화면을 갱신하며 정보를 보여줌.~~*
 ### 1-3. 사용 예시
 * **실행결과**
-> ![top 실행결과](https://postfiles.pstatic.net/MjAyMjAxMzFfMjAx/MDAxNjQzNjA4MzIxMjk0.g0Mi1bBv0QNNVYycebt8sFDgOi2SnwYIy-0el8mzNdQg.REMOZJ03m8Vopg4sJvL_1iCcGIhgBafDiutsda0k9hcg.PNG.dktmrorl/SE-bd5ab58f-19da-4c51-8095-49ad750f129f.png?type=w773)
+> ![top 실행결과](https://postfiles.pstatic.net/MjAyMjAxMzFfMjAx/MDAxNjQzNjA4MzIxMjk0.g0Mi1bBv0QNNVYycebt8sFDgOi2SnwYIy-0el8mzNdQg.REMOZJ03m8Vopg4sJvL_1iCcGIhgBafDiutsda0k9hcg.PNG.dktmrorl/SE-bd5ab58f-19da-4c51-8095-49ad750f129f.png?type=w773)    
+>`top -b`    
+>순간의 정보를 확인하려면 -b 옵션 추가(batch 모드)    
+>`top -n`     
+>-n 옵션을 사용하여 top 실행 주기 설정(반복 횟수)        
+
 * **top 실행 후 명령어**
 
 |명령어|설명|
@@ -21,6 +27,8 @@
 |M|메모리 사용률 순으로 정렬|
 |P|CPU 사용률 순으로 정렬|
 |T|실행 시간 순으로 정렬|
+|a|메모리 사용량에 따라 정렬|
+|1|CPU Core별로 사용량 보여줌|
 ## 2. ps 
 ### 2-1. **ps 명령어란?**
 >  ps는 'process status'의 약자로, 현재 실행중인 프로세스 목록을 확인할 수 있는 유틸리티이다. CPU, 메모리, 실행 시간 등의 정보를 제공한다.
@@ -50,6 +58,15 @@
 
 * *모든 프로세스를 풀 포맷으로 출력한 목록에서 grep을 이용해 seek이 포함된 행(Row)을 출력*
 > `ps -ef | grep seek`
+
+
+<hr/>
+
+***ps와 top의 차이점***    
+> *ps는 ps한 시점에 proc에서 검색한 cpu 사용량*
+> *top은 proc에서 일정 주기로 합산해 cpu 사용율 출력*
+
+<hr/>
 
 ## **3. jobs**
 ### 3-1. jobs 명령어란?
