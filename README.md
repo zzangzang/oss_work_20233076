@@ -35,6 +35,14 @@
 ### 2-2. 사용 구문
 > `ps[옵션]`
 ### 2-3. 사용 예시
+* **실행결과**
+> ![ps 실행결과](https://postfiles.pstatic.net/MjAyMTA2MjNfOTcg/MDAxNjI0Mzc4NDAzNzk4.MwsSfnvkig8gCoFAeVdoxjoRAzVYdm6AITk5NNXF4WYg.hPEi8h1DMPJOzbRqb8Z9GxrFPydq_xXuVa9PSy2OBG8g.PNG.ycpiglet/image.png?type=w773)    
+> 
+> *TTY는 프로세스가 실행된 터미널 번호를 의미    
+> TIME은 프로세스가 사용한 컴퓨터 시간(분초)을 의미   
+> CMD는 프로세스의 이름을 의미*
+
+**ps 실행 후 명령어**
 * *pid, cmd 등 프로세스의 기본적인 내용만 출력*
 > `ps`
 
@@ -75,7 +83,7 @@
 > `jobs [옵션] [job ID]`     
 >  `jobs -x command [args]`
 ### 3-3. 사용 예시
-* **top 실행 후 명령어**
+* **jobs 실행 후 명령어**
 
 |옵션|설명|
 |:--|:--|
